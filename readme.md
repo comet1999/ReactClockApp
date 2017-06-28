@@ -1,1 +1,2 @@
-Just another react clock app.
+Just another react clock app. 
+Learning react.
