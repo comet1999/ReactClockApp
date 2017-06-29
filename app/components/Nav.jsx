@@ -8,6 +8,37 @@ const Nav2 = () => {
 }
 
 const Nav = React.createClass({
+
+    componentWillMount: function() {
+        console.log(`1. Component will mount.`);
+    },
+
+    componentDidMount: function() {
+        console.log(`2. Component did mount.`);
+    },
+
+    componentWillReceiveProps: function() {
+        console.log(`3. Component will receive props.`);
+    },
+
+    shouldComponentUpdate: function() {
+        console.log(`4. Should component update.`);
+    },
+
+    componentWillUpdate: function() {
+        console.log(`5. Component will update.`);
+    },
+
+    componentDidUpdate: function() {
+        console.log(`6. Component update.`);
+
+    },
+
+    componentWillUnmount: function() {
+        console.log(`7. Component will UN-mount.`);
+    },
+
+
     render: function() {
         return (
             <div className="top-bar">
@@ -17,7 +48,7 @@ const Nav = React.createClass({
                             Awesome Timer APP
                         </li>
                         <li className="menu-text">
-                            <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
+                            <IndexLink to="/" exact activeClassName="active-link">Timer</IndexLink>
                         </li>
                         <li className="menu-text">
                             <Link to="/stopwatch" activeClassName="active-link">Stopwatch</Link>

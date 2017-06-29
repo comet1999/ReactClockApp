@@ -1,5 +1,10 @@
 const expect = require('expect');
 
-it('should properly run tests', () => {
-    expect(1).toBe(1);
+
+describe('tests config', () => {
+
+    it('should properly run tests', () => {
+        expect(1).toBe(1);
+    }); 
+
 });

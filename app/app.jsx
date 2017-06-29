@@ -23,9 +23,9 @@ ReactDOM.render(
     /*{ <Router history={browserHistory}> }*/
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
-            <IndexRoute component={Timer}/>
-            <Route path="timer" component={Timer}></Route>
+            {/*<Route path="timer" component={Timer}></Route>*/}
             <Route path="stopwatch" component={Stopwatch}></Route>
+            <IndexRoute component={Timer}/>
         </Route>
     </Router>,
     document.getElementById('app')
