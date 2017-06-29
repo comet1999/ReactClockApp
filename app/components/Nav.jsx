@@ -23,6 +23,7 @@ const Nav = React.createClass({
 
     shouldComponentUpdate: function() {
         console.log(`4. Should component update.`);
+        return true;
     },
 
     componentWillUpdate: function() {

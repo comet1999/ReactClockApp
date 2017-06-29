@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "karma start",
+    "test-watch": "nodemon --exec 'yarn test' ",
     "webpack-watch": "nodemon --exec 'webpack -w' "
   },
   "devDependencies": {
