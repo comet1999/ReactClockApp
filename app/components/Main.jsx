@@ -1,7 +1,7 @@
 const React = require('react');
 const {Nav} = require('Nav');
 const {Timer} = require('Timer');
-const {Stopwatch} = require('Stopwatch');
+const {Countdown} = require('Countdown');
 
 // const Main = React.createClass({
 //     render: function() {
@@ -22,9 +22,10 @@ const Main = (props) => {
     
     return (
         <div>
-            <div>
-                <div>
-                    <Nav />
+            <Nav />
+            <div className="row">
+                <div className="column small-centered medium-6 large-4">
+                    
                     <p>Main.jsx rendered.</p>
                     {props.children}
                 </div>

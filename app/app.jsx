@@ -5,7 +5,7 @@ const {Route, Router, IndexRoute, hashHistory, browserHistory} = require('react-
 
 const {Main}      = require('Main');
 const {Timer}     = require('Timer');
-const {Stopwatch} = require('Stopwatch');
+const {Countdown} = require('Countdown');
 
 
 
@@ -24,7 +24,7 @@ ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
             {/*<Route path="timer" component={Timer}></Route>*/}
-            <Route path="stopwatch" component={Stopwatch}></Route>
+            <Route path="countdown" component={Countdown}></Route>
             <IndexRoute component={Timer}/>
         </Route>
     </Router>,

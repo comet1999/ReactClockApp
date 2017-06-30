@@ -3,7 +3,7 @@ const webpackConfig = require('./webpack.config.js');
 module.exports = function(config) {
 
     config.set({
-        //browsers: ['Chrome'],
+        // browsers: ['Chrome'],
         browsers: ['PhantomJS','PhantomJS_custom'],
         //browsers: ['PhantomJS'],
 
