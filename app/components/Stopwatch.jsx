@@ -8,7 +8,7 @@ const Stopwatch = React.createClass({
         return (
             <div>
                 <div>Stopwatch component</div>
-                <Clock />
+                <Clock totalSeconds={129}/>
                 <Controls />
             </div>
         );
