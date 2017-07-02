@@ -60,7 +60,7 @@ const Countdown = React.createClass({
                 {/*<div>Stopwatch component</div>*/}
                 <Clock totalSeconds={count}/>
                 <CountdownForm onSetCountdown={this.handleSetCountdown} />
-                <Controls />
+                <Controls countdownStatus={this.state.countdownStatus}/>
             </div>
         );
     }
