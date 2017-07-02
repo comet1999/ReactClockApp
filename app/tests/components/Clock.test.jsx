@@ -8,14 +8,15 @@ const TestUtils   = require('react-addons-test-utils');
 const {Clock}       = require('Clock');
 
 
-describe('Clock', () => {
+describe('Clock Component', () => {
 
     it('should exist', () => {
         expect(Clock).toExist();
     });
 });
 
-describe('render clock', () => {
+
+describe('Clock Render', () => {
     it('should render clock to output', () => {
         let clock = TestUtils.renderIntoDocument(<Clock totalSeconds={62}/>);
         // let renderedClock = clock.render();
@@ -30,7 +31,7 @@ describe('render clock', () => {
     });
 });
 
-describe('FormatSeconds', () => {
+describe('Clock FormatSeconds', () => {
 
     it('should format seconds', () => {
         let clock = TestUtils.renderIntoDocument(<Clock/>);
