@@ -8,7 +8,7 @@ const Timer = React.createClass({
             <div>
                 <div>Timer.jsx component</div>
                 <Clock/>
-                <Controls/>
+               {/* <Controls/>*/}
             </div>
         );
     }
